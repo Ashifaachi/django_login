@@ -1,0 +1,5 @@
+env = django25
+db = login1
+user = admin
+email = aabc@de.com
+pass = 123

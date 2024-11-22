@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hellow</h1>
+    
+  <table>
+    <tr>
+        <th>Name</th>
+        <th>Photo</th>
+        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+    </tr>
+    {% for img in images %}
+    <tr>
+        <td>{{img.name}}</td>
+        <td><a href="{% url 'app1:details' img.id %}"><img src="{{ img.Photo.url }}" height="100px" width="200px"></a></td>
+        <td>{{img.dtails}}</td>
+        
+    </tr>
+    {% endfor %}</td>
+    </tr>
+</table>
+    
+    
+</body>
+</html>
